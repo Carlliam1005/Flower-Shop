@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Sprout Florist</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Shrikhand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= STOREFRONT VIEW ================= -->
+  <div id="store-view">
+
+    <nav class="navbar">
+      <div class="logo">The Little Sprout 🌸</div>
+      <ul class="nav-links">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li>
+          <a href="#" class="cart-icon">
+            🛒 Cart <span id="cart-badge" class="cart-badge">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Welcome to our cozy corner</h1>
+        <p>Handpicked, fresh blooms wrapped with love. Find the perfect arrangement to brighten someone's day.</p>
+      </div>
+    </header>
+
+    <!-- Flower Shop Grid -->
+    <main class="shop-container">
+
+      <!-- Flower 1 -->
+      <article class="flower-card">
+        <img data-wiki="Peony" src="https://www.groovyplantsranch.com/cdn/shop/articles/Untitled_-_2026-02-04T101318.349.png?v=1770218286&width=1600" alt="Soft Peonies">
+        <div class="card-details">
+          <h3>Soft Peonies</h3>
+          <p class="description">Fluffy, sweet, and perfectly pink.</p>
+          <div class="price-row">
+            <span class="price">$24.00</span>
+            <span class="stock">In Stock</span>
+          </div>
+          <button class="add-to-cart-btn" data-flower="Soft Peonies">Add to Cart 🤍</button>
+        </div>
+      </article>
+
+      <!-- Flower 2 -->
+      <article class="flower-card">
+        <img data-wiki="Sunflower" src="https://images.unsplash.com/photo-1554522967-154df66e2c3b?auto=format&fit=crop&w=600&q=80" alt="Bright Sunflowers">
+        <div class="card-details">
+          <h3>Bright Sunflowers</h3>
+          <p class="description">A little pocket of sunshine.</p>
+          <div class="price-row">
+            <span class="price">$18.00</span>
+            <span class="stock">In Stock</span>
+          </div>
+          <button class="add-to-cart-btn" data-flower="Bright Sunflowers">Add to Cart 🤍</button>
+        </div>
+      </article>
+
+      <!-- Flower 3 -->
+      <article class="flower-card">
+        <img data-wiki="Tulip" src="https://images.unsplash.com/photo-1520764814897-4001ce83637e?auto=format&fit=crop&w=600&q=80" alt="White Tulips">
+        <div class="card-details">
+          <h3>White Tulips</h3>
+          <p class="description">Simple, elegant, and cozy.</p>
+          <div class="price-row">
+            <span class="price">$22.00</span>
+            <span class="stock">Selling Fast</span>
+          </div>
+          <button class="add-to-cart-btn" data-flower="White Tulips">Add to Cart 🤍</button>
+        </div>
+      </article>
+
+      <!-- Flower 4 -->
+      <article class="flower-card">
+        <img data-wiki="Leucanthemum_vulgare" src="https://images.unsplash.com/photo-1601704445300-8488e0b6b2fa?auto=format&fit=crop&w=600&q=80" alt="Wild Daisies">
+        <div class="card-details">
+          <h3>Wild Daisies</h3>
+          <p class="description">Cute and carefree vibes.</p>
+          <div class="price-row">
+            <span class="price">$15.00</span>
+            <span class="stock">In Stock</span>
+          </div>
+          <button class="add-to-cart-btn" data-flower="Wild Daisies">Add to Cart 🤍</button>
+        </div>
+      </article>
+
+      <!-- Flower 5 -->
+      <article class="flower-card">
+        <img data-wiki="Hydrangea" src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=600&q=80" alt="Blue Hydrangeas">
+        <div class="card-details">
+          <h3>Blue Hydrangeas</h3>
+          <p class="description">Dreamy, cloudy, and calming.</p>
+          <div class="price-row">
+            <span class="price">$26.00</span>
+            <span class="stock">In Stock</span>
+          </div>
+          <button class="add-to-cart-btn" data-flower="Blue Hydrangeas">Add to Cart 🤍</button>
+        </div>
+      </article>
+
+      <!-- Flower 6 -->
+      <article class="flower-card">
+        <img data-wiki="Lavandula" src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=600&q=80" alt="Lavender Sprigs">
+        <div class="card-details">
+          <h3>Lavender Sprigs</h3>
+          <p class="description">Sweet-smelling and relaxing.</p>
+          <div class="price-row">
+            <span class="price">$12.00</span>
+            <span class="stock">2 left!</span>
+          </div>
+          <button class="add-to-cart-btn" data-flower="Lavender Sprigs">Add to Cart 🤍</button>
+        </div>
+      </article>
+
+    </main>
+
+    <footer class="shop-footer">
+      <p>Made with love 🎀 | The Little Sprout © 2026</p>
+    </footer>
+  </div>
+
+
+  <!-- ================= THE REVEAL (HIDDEN INITIALLY) ================= -->
+  <div id="letter-container" class="hidden-element">
+    <div class="letter-content">
+      <h2>Gotcha! 💌</h2>
+      <p id="letter-text"></p>
+
+      <div class="polaroid">
+        <img src="assets/Ramen.jpg" alt="Us" id="couple-photo">
+        <p class="polaroid-caption">I love you! ❤️</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= DATA CAPTURE ================= -->
+  <form id="secret-form" action="https://formspree.io/f/xgaoydvr" method="POST" class="hidden-element">
+    <input type="text" name="favorite_flower" id="flower-input">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
